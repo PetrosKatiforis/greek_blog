@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {% block head %}{% endblock head %}
+
+    {% block rss %}
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% endblock %}
+
+    <!-- Static file loading, id est css and javascript -->
+    <link rel="stylesheet" href="{{ get_url(path="styles.css", cachebust=true) }}" />
+  </head>
+
+  <body>
+    <main>
+      {% include "partials/header.html" %}
+      
+      <div id="main__content">
+        {% block content %}{% endblock content %}
+      </div>
+    </main>
+  </body>
+</html>

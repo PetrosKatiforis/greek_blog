@@ -1,0 +1,21 @@
+{% import "macros/list-articles.html" as macros %}
+{% extends "base.html" %}
+
+{% block head %}
+  <title>Αναζήτηση ετικέτας "{{ term.name }}" | {{ config.extra.title }}</title>
+{% endblock head %}
+
+{% block content %}
+  <h2>
+    Αναζήτηση για ετικέτα: 
+    <span class="tag font-sm">{{ term.name }}</span>
+  </h2>
+
+  <p class="mt-1">
+    Δεν βρίσκεις τίποτα ενδιαφέρον; Επισκέψουν την αρχική σελίδα και δες τα
+    πρόσφατα άρθα. Εναλλακτικά, αναζήτησε για ετικέτες μέσα σε οποιαδήποτε
+    τυχαία ανάρτηση.
+  </p>
+
+  {{ macros::list_articles(pages=term.pages) }}
+{% endblock content %}

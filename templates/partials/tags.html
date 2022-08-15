@@ -1,0 +1,10 @@
+{# Rendering tags as a div of span tags #}
+{# The only reason for this being a partial is that it might be reused later #}
+
+<div class="tags">
+  {% for tag in page.taxonomies.tags %}
+    <span class="tag">
+      <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>
+    </span>
+  {% endfor %}
+</div>

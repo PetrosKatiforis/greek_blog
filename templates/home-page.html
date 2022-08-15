@@ -1,0 +1,20 @@
+{% import "macros/list-articles.html" as macros %}
+{% extends "base.html" %}
+
+{% block head %}
+  <title>{{ section.title }} | {{ config.extra.title }}</title>
+  <meta name="description" value="Εδώ θα αναρτώ απόψεις για δίαφορα θέματα τεχνολογίας, υπολογιστών αλλά για οτιδήποτε άλλο πιστεύω πως με αφορά.">
+{% endblock head %}
+
+{% block content %}
+  <div class="markdown">
+    {{ section.content | safe }}
+  </div>
+
+  <h3 class="mt-2">Λίστα Άρθρων:</h3>
+
+  {% set articles = get_section(path="blog/_index.md") %}
+  {{ macros::list_articles(pages=articles.pages) }}
+{% endblock content %}
+
+

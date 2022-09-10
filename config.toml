@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://greek-blog.netlify.app/"
+base_url = "https://petrosk.netlify.app/"
 
 generate_feed = true
 
@@ -14,4 +14,4 @@ taxonomies = [
 ]
 
 [extra]
-title = "Πίουι Blog"
+title = "Petrosk Blog"

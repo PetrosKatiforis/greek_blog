@@ -1,10 +1,13 @@
 {% macro list_articles(pages) %}
   {# Lists specified articles in a <ul> format, including their publishing date #}
   
-  <ul class="mt-2">
+  <ul class="mt-2 posts">
     {% for page in pages %}
       <li>
-        <p>{{ page.date }} <a href={{ page.permalink }}>{{ page.title }}</a></p>
+        <a href={{ page.permalink }} class="post__container">
+          <h2>{{ page.date }} - {{ page.title }}</h2>
+          <p>{{ page.description }}</p>
+        </a>
       </li>
     {% endfor %}
   </ul>

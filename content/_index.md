@@ -17,5 +17,5 @@ template = "home-page.html"
 
 Είμαι μαθητής της τρίτης λυκείου και με ενδιαφέρει ο προγραμματισμός. Μπορείς
 να βρεις ένα μεγάλο μέρος της δουλειάς μου στη [σελίδα μου στο
-github](https://github.com/PetrosKatiforis). Έαν τυχόν επιθυμείς να
+github](https://github.com/PetrosKatiforis). Εάν τυχόν επιθυμείς να
 επικοινωνήσεις μαζί μου, χρησιμοποίησε το email μου (pkatif@mail.com).

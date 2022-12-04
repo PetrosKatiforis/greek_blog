@@ -1,0 +1,1 @@
+#main__content :is(h1, h2, h3, h4, h5, h6, p){line-height:1.5}.markdown p~:is(h1, h2, h3, h4, h5, h6){margin-top:1.5em}#main__content .markdown p{margin:1rem 0;line-height:1.6;padding:0.25rem}h1{font-size:2rem}h2{font-size:1.71rem}h3{font-size:1.314rem}h4{font-size:1.021rem}h5{font-size:0.78rem}p{font-size:1.05rem}ul{margin-left:3em}a{color:#61a3c4}
